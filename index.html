@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -37,62 +38,69 @@
       <section class="card" id="css-section">
         <h2>CSS</h2>
      <ul>
-       <li>Enter your CSS notes here</li>
+      <li>CSS styling can be added inline (as a style attribute in an HTML tag), with an internal stylesheet (using a style element), or with an external stylesheet.</li>
+      <li>An external stylesheet is preferable in order to maintain separation of concerns.</li> 
+      <li>To attach an external stylesheet, add a &lt;link> element in the head with attributes rel="stylesheet" href=[relative path]</li>
+      <li>Every element is essentially a box, with a margin (space outside the box), border, padding (space inside the box), and content.</li>
+      <li>The height and width attributes of an element apply to the content of the element, so padding, border, and margin all increase the space between the content and surrounding elements. All but margin increase the size of the element.</li>
+      <li>A CSS declaration appears as "property:value"</li>
+      <li>A CSS ruleset begins with one or more selectors separated by commas and contains one or more declarations enclosed in curly braces ({}) and separated by semicolons.</li>
+      <li>Selectors can include element types, classes (which are preceded by a period), IDs (which are preceded by a #)</li>
      </ul>
    
       </section>
    
       <section class="card" id="git-section">
         <h2>Git</h2>
-        <table style="border-collapse:collapse">
+        <table class="table">
           
           <tr>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">1.</td>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">Check the current branch.</td>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">git status </td>
+            <td>1.</td>
+            <td>Check the current branch.</td>
+            <td>git status </td>
           </tr>
           <tr>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">2.</td>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">Add a branch and switch to that branch.</td>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">git checkout -b [type (e.g., feature)]/[name]</td>
+            <td>2.</td>
+            <td>Add a branch and switch to that branch.</td>
+            <td>git checkout -b [type (e.g., feature)]/[name]</td>
           </tr>
           <tr>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">Alt</td>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">Switch to a branch.</td>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">git checkout [type]/[name]</td>
+            <td>Alt</td>
+            <td>Switch to a branch.</td>
+            <td>git checkout [type]/[name]</td>
           </tr>
           <tr>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">3.</td>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">Check the current branch again.</td>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">git status</td>
+            <td>3.</td>
+            <td>Check the current branch again.</td>
+            <td>git status</td>
           </tr>
           <tr>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">4.</td>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">Stage (add) files in the current repository to the current branch.</td>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">git add -A <br>
+            <td>4.</td>
+            <td>Stage (add) files in the current repository to the current branch.</td>
+            <td>git add -A <br>
               OR git add [filename]
             </td>
           </tr>
           <tr>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">5.</td>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">Commit staged files to the next push.</td>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">git commit -m "[commit message]"</td>
+            <td>5.</td>
+            <td>Commit staged files to the next push.</td>
+            <td>git commit -m "[commit message]"</td>
           </tr>
           <tr>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">6.</td>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">Ensure the local branch is synchronized with the base branch in GitHub.</td>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">git pull origin main</td>
+            <td>6.</td>
+            <td>Ensure the local branch is synchronized with the base branch in GitHub.</td>
+            <td>git pull origin main</td>
           </tr>
           <tr>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">7.</td>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">Push changes to the remote branch.</td>
-            <td style="border:1px solid; border-color:#111193; padding:5px;">git push origin [type]/[name]</td>
+            <td>7.</td>
+            <td>Push changes to the remote branch.</td>
+            <td>git push origin [type]/[name]</td>
           </tr>
         </table>
         <br>
-        <p>Next, navigate to the GitHub repo in the browser and select the desired branch.</p>
+        <p class="body">Next, navigate to the GitHub repo in the browser and select the desired branch.</p>
      <ol>
-       <li>Click <em>Compare & pull request</em>.</li>
+       <li>Click <b>Compare & pull request</b>.</li>
        <li>Add a descriptive title.</li>
        <li>In the body, add instructions for team members who will review the PR:</li>
        <ol type="a">
@@ -101,7 +109,7 @@
         <li>How to start the application so the feature can be tested</li>
        </ol>
        <li>Designate the base and compare branches.</li>
-       <li>Click <em>Create pull request</em>.</li>
+       <li>Click <b>Create pull request</b>.</li>
      </ol>
    
       </section>
